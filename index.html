@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coil &amp; Copper Supply Co. | Coming Soon</title>
+<meta name="description" content="Coil &amp; Copper Supply Co. is coming soon. HVAC, Electrical &amp; Plumbing Supplies, shipped direct. Built for pros, open to everyone.">
+<meta name="theme-color" content="#1F2328">
+<meta property="og:title" content="Coil &amp; Copper Supply Co. | Coming Soon">
+<meta property="og:description" content="HVAC, Electrical &amp; Plumbing Supplies, shipped direct. Built for pros, open to everyone.">
+<meta property="og:image" content="assets/logo-dark.png">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+<style>
+@font-face{font-family:"Barlow";src:url("assets/Barlow-Bold.ttf") format("truetype");font-weight:700;font-display:swap}
+:root{--copper:#B87333;--burnished:#8C4A22;--patina:#2F6F63;--graphite:#1F2328;--paper:#F7F4EF;--gray:#5E646B}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  min-height:100vh;display:flex;flex-direction:column;
+  background:var(--graphite);color:var(--paper);
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;position:relative}
+/* brushed-steel grain + faint grid, kept low so the logo's own background blends in */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;
+  background:
+    repeating-linear-gradient(90deg,rgba(255,255,255,.018) 0 1px,transparent 1px 3px),
+    linear-gradient(rgba(184,115,51,.05) 1px,transparent 1px) 0 0/48px 48px,
+    linear-gradient(90deg,rgba(184,115,51,.05) 1px,transparent 1px) 0 0/48px 48px;
+  -webkit-mask-image:radial-gradient(ellipse 75% 70% at center,transparent 55%,#000 95%);
+          mask-image:radial-gradient(ellipse 75% 70% at center,transparent 55%,#000 95%)}
+/* weathered copper / patina glow at the edges */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;
+  background:
+    radial-gradient(38vw 30vh at 0% 100%,rgba(47,111,99,.16),transparent 70%),
+    radial-gradient(38vw 30vh at 100% 0%,rgba(184,115,51,.14),transparent 70%)}
+.topbar{height:4px;background:linear-gradient(90deg,var(--patina),var(--copper) 35%,#d9955a 50%,var(--copper) 65%,var(--burnished));position:relative;z-index:1}
+main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:4vh 20px 2vh;position:relative;z-index:1}
+.logo{width:min(760px,100%);height:auto;display:block;
+  aspect-ratio:1280/720;margin:-6% 0 -4%}
+.rule{width:min(420px,70%);height:1px;margin:8px auto 28px;
+  background:linear-gradient(90deg,transparent,var(--copper),transparent)}
+h1{font-family:"Barlow","Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;
+  font-size:clamp(44px,8vw,88px);line-height:1;letter-spacing:.06em;
+  background:linear-gradient(180deg,#f0c08f 0%,#B87333 55%,#8C4A22 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  text-shadow:0 0 40px rgba(184,115,51,.18)}
+.tagline{margin-top:22px;max-width:560px;font-size:clamp(16px,2.2vw,19px);line-height:1.55;color:#cfd2d6}
+.tagline strong{color:var(--paper);font-weight:600}
+footer{position:relative;z-index:1;text-align:center;padding:22px 16px 26px;
+  font-size:13px;color:#8a9096;letter-spacing:.04em;border-top:1px solid rgba(184,115,51,.18)}
+@media (max-width:520px){
+  .logo{margin:-4% 0 -2%}
+  .rule{margin:4px auto 22px}
+}
+</style>
+</head>
+<body>
+<div class="topbar" aria-hidden="true"></div>
+<main>
+  <img class="logo" src="assets/logo-dark.png" width="1280" height="720" alt="Coil &amp; Copper Supply Co.">
+  <div class="rule" aria-hidden="true"></div>
+  <h1>Coming Soon</h1>
+  <p class="tagline"><strong>HVAC, Electrical &amp; Plumbing Supplies, shipped direct.</strong> Built for pros, open to everyone.</p>
+</main>
+<footer>&copy; 2026 Coil &amp; Copper Supply Co.</footer>
+</body>
+</html>
